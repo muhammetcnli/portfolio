@@ -48,6 +48,7 @@ header {
 .header-text {
     flex: 1;
     min-width: 200px;
+    text-align: left;
 }
 
 header h1 {
@@ -77,7 +78,14 @@ header p {
     background-color: #2980b9;
 }
 
-/* About section */
+/* About section (optional, we might keep or remove) */
+/* We'll keep About? The user didn't request About but we have Contact now. We can keep About or replace with Contact.
+   We added Contact section, keep About? The user said: "Sonra basitçe onun altında contact olacak, sonrasında Experience tarzında devam edecek."
+   So after header, Contact, then Experience. No About needed. We'll comment out About or remove.
+   Let's keep About? Better remove to follow request. We'll comment out About section in HTML? Already we have no About in HTML.
+   So we don't need About CSS. But we have .about class in CSS; we can keep but not used. We'll leave it.
+
+*/
 .about {
     padding: 4rem 0;
     background-color: #f9f9f9;
@@ -97,6 +105,40 @@ header p {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+}
+
+/* Contact section */
+.contact {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.contact-info p {
+    margin-bottom: 0.8rem;
+}
+
+.contact-info a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
 }
 
 /* Experience section */

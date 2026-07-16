@@ -7,82 +7,312 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <main class="resume-page">
         <div class="container">
-            <div class="header-content">
-                <img src="assets/referans.png" alt="Muhammet Canlı" class="profile-photo">
-                <div class="header-text">
-                    <h1>Muhammet Canlı</h1>
-                    <p>Software Developer</p>
-                    <a href="assets/Muhamet_Canli_CV_ENG.pdf" download class="cv-button">Download CV</a>
+            <div class="topbar">
+                <div class="topbar-actions">
+                    <a href="assets/Muhamet_Canli_CV_ENG.pdf" download class="pill-button pill-button-primary" data-i18n="downloadPdf">Download PDF</a>
+                </div>
+                <div class="language-switcher" aria-label="Language switcher">
+                    <button type="button" class="language-chip is-active" data-lang="en">EN</button>
+                    <button type="button" class="language-chip" data-lang="tr">TR</button>
                 </div>
             </div>
-        </div>
-    </header>
 
-    <section class="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <div class="contact-info">
-                <p>📧 <a href="mailto:muhammet@example.com">muhammet@example.com</a></p>
-                <p>📱 +90 555 123 4567</p>
-                <p>📍 Istanbul, Turkey</p>
-                <p>🌐 <a href="https://muhammetcnli.github.io/portfolio/" target="_blank">muhammetcnli.github.io/portfolio</a></p>
-            </div>
-        </div>
-    </section>
+            <section class="hero">
+                <div class="hero-left">
+                    <div class="portrait-frame" aria-label="Muhammet Canlı portrait">
+                        <img src="assets/photo.png" alt="Muhammet Canlı portrait crop" class="portrait-image">
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="name-row">
+                        <h1>Muhammet Canlı</h1>
+                        <div class="social-row" aria-label="Social links">
+                            <a href="https://github.com/muhammetcnli" target="_blank" rel="noreferrer" aria-label="GitHub">github.com/muhammetcnli</a>
+                            <a href="https://www.linkedin.com/in/muhammetcnli" target="_blank" rel="noreferrer" aria-label="LinkedIn">linkedin.com/in/muhammetcnli</a>
+                        </div>
+                    </div>
+                    <div class="intro-copy">
+                        <p data-i18n="summaryLead">Results-driven Computer Engineering graduate and Software Developer specializing in Java and Spring Boot. Experienced in architecting scalable fintech solutions, AI-driven platforms, and enterprise-level hierarchical approval systems.</p>
+                        <p data-i18n="summaryBody">Proficient in RESTful microservices, SQL, and modern deployment pipelines (Docker, CI/CD). Combines a global perspective gained through an Erasmus+ exchange with proven hands-on software delivery in corporate environments.</p>
+                    </div>
+                </div>
+            </section>
 
-    <section class="experience">
-        <div class="container">
-            <h2>Experience</h2>
-            <div class="experience-items">
-                <div class="experience-item">
-                    <h3>Software Developer Intern</h3>
-                    <div class="company">Tech Company XYZ — Summer 2024</div>
-                    <p>Developed web applications using React and Node.js, collaborated with cross-functional teams, and improved application performance by 20%.</p>
-                </div>
-                <div class="experience-item">
-                    <h3>Freelance Web Developer</h3>
-                    <div class="company">Self-employed — 2022-Present</div>
-                    <p>Built custom websites for local businesses, implemented responsive designs, and maintained client websites with regular updates.</p>
-                </div>
-                <div class="experience-item">
-                    <h3>Teaching Assistant</h3>
-                    <div class="company">University ABC — Fall 2023</div>
-                    <p>Assisted professors in computer science courses, helped students with programming assignments, and conducted lab sessions.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            <section class="info-grid">
+                <article class="info-card">
+                    <h2 data-i18n="contactHeading">Contact</h2>
+                    <ul>
+                        <li><strong data-i18n="phoneLabel">Phone:</strong> +90 501 151 3199</li>
+                        <li><strong data-i18n="emailLabel">Email:</strong> muhammet@canli.my</li>
+                        <li><strong data-i18n="locationLabel">Location:</strong> İzmit, Kocaeli, Türkiye</li>
+                    </ul>
+                </article>
+                <article class="info-card">
+                    <h2 data-i18n="personalHeading">Personal</h2>
+                    <ul>
+                        <li><strong data-i18n="githubLabel">GitHub:</strong> github.com/muhammetcnli</li>
+                        <li><strong data-i18n="linkedinLabel">LinkedIn:</strong> linkedin.com/in/muhammetcnli</li>
+                        <li><strong data-i18n="languagesLabel">Languages:</strong> Turkish (Native), English (B2+)</li>
+                    </ul>
+                </article>
+            </section>
 
-    <section class="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <!-- Project items will go here -->
-                <div class="project-card">
-                    <h3>Project Title</h3>
-                    <p>A brief description of the project.</p>
-                    <a href="#" class="project-link">View Project</a>
+            <section class="experience-section">
+                <div class="section-heading">
+                    <h2 data-i18n="experienceHeading">Experience</h2>
+                    <span class="section-note" data-i18n="experienceNote">Sep 2022 - Jun 2026</span>
                 </div>
-                <div class="project-card">
-                    <h3>Project Title</h3>
-                    <p>A brief description of the project.</p>
-                    <a href="#" class="project-link">View Project</a>
-                </div>
-                <div class="project-card">
-                    <h3>Project Title</h3>
-                    <p>A brief description of the project.</p>
-                    <a href="#" class="project-link">View Project</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Muhammet Canlı. All rights reserved.</p>
+                <article class="experience-item">
+                    <div class="experience-headline">
+                        <h3 data-i18n="dpTitle">Software Developer Intern, DP World Evyap</h3>
+                        <span>Aug 2025 - Sep 2025</span>
+                    </div>
+                    <ul>
+                        <li>Developed a Purchase Approval Management System using Spring Boot and React to automate hierarchical procurement processes.</li>
+                        <li>Implemented JWT-based authentication and role-based access control for different approval limits across user levels.</li>
+                        <li>Designed and managed relational databases using Spring Data JPA and H2 to ensure data integrity.</li>
+                    </ul>
+                </article>
+
+                <article class="experience-item">
+                    <div class="experience-headline">
+                        <h3 data-i18n="kbbTitle">Software Developer Intern, Kocaeli Büyükşehir Belediyesi</h3>
+                        <span>Oct 2025 - Feb 2026</span>
+                    </div>
+                    <ul>
+                        <li>Assisted in developing web applications using .NET Core MVC and MySQL, focusing on performance and UX.</li>
+                        <li>Integrated RESTful APIs to ensure efficient data exchange between backend and frontend systems.</li>
+                        <li>Collaborated with senior developers to debug, test, and deploy new features, ensuring system stability.</li>
+                    </ul>
+                </article>
+
+            </section>
+
+            <section class="experience-section">
+                <div class="section-heading">
+                    <h2 data-i18n="educationHeading">Education</h2>
+                    <span class="section-note" data-i18n="educationNote">Academic background</span>
+                </div>
+
+                <article class="experience-item">
+                    <div class="experience-headline">
+                        <h3 data-i18n="duzceTitle">Duzce University, Bachelor's Degree in Computer Engineering</h3>
+                        <span>Sep 2022 - Jun 2026</span>
+                    </div>
+                    <ul>
+                        <li>GPA 3.28</li>
+                    </ul>
+                </article>
+
+                <article class="experience-item">
+                    <div class="experience-headline">
+                        <h3 data-i18n="gdanskTitle">Gdansk University of Technology, Bachelor's Degree in Data Engineering</h3>
+                        <span>Erasmus+ Exchange Program</span>
+                    </div>
+                    <ul>
+                        <li>Relevant Coursework: Database Systems</li>
+                    </ul>
+                </article>
+
+            </section>
+
+            <section class="experience-section">
+                <div class="section-heading">
+                    <h2 data-i18n="projectsHeading">Personal Projects</h2>
+                    <span class="section-note" data-i18n="projectsNote">Selected work</span>
+                </div>
+
+                <article class="experience-item">
+                    <div class="experience-headline">
+                        <h3 data-i18n="tradeMasterTitle">TradeMaster – Multi-Asset Trading Engine</h3>
+                        <span>Jul 2024 - Aug 2024</span>
+                    </div>
+                    <ul>
+                        <li>Engineered a production-ready Spring Boot backend, utilizing Redis for caching and PostgreSQL for data.</li>
+                        <li>Automated cross-asset trading via Frankfurter, CoinGecko, and Alpha Vantage APIs.</li>
+                        <li>Developed a secure Telegram Bot interface via Webhooks, implementing MDC logging for 100% traceability.</li>
+                        <li>Containerized the stack via Docker Compose and deployed to Render with a CI/CD-ready pipeline.</li>
+                    </ul>
+                    <p class="experience-tags"><a href="https://github.com/muhammetcnli/TradeMaster-Fintech-Bot" target="_blank" rel="noreferrer">github.com/muhammetcnli/TradeMaster-Fintech-Bot</a></p>
+                </article>
+
+                <article class="experience-item">
+                    <div class="experience-headline">
+                        <h3 data-i18n="resumiseTitle">Resumise – AI-Powered Career Platform</h3>
+                        <span>2026</span>
+                    </div>
+                    <ul>
+                        <li>Architected a 3-tier AI-driven resume platform backend using Java 21, Spring Boot 3, and PostgreSQL.</li>
+                        <li>Developed REST APIs connecting frontend with Python AI microservices, secured by Spring Security and Google OAuth2.</li>
+                        <li>Containerized the system with Docker and automated CI/CD pipelines to GHCR using GitHub Actions.</li>
+                        <li>Exhibited as a Top 100 project at the Bolu Düzce Ar-Ge Pazarı 2026.</li>
+                    </ul>
+                    <p class="experience-tags"><a href="https://github.com/muhammetcnli/resumise-backend" target="_blank" rel="noreferrer">github.com/muhammetcnli/resumise-backend</a></p>
+                </article>
+
+                <article class="experience-item">
+                    <div class="experience-headline">
+                        <h3 data-i18n="campusTitle">CampusPulse – 3D Digital Twin & Energy Analytics</h3>
+                        <span>Hackathon Project</span>
+                    </div>
+                    <ul>
+                        <li>Secured 2nd place among 30 hackathon teams by building a full-stack energy platform using React, FastAPI, and ML.</li>
+                        <li>Developed a 3D digital twin via Three.js for real-time energy waste detection and projected savings.</li>
+                        <li>Built an analytics dashboard visualizing consumption across 30+ rooms with an AI-powered recommendation engine.</li>
+                    </ul>
+                    <p class="experience-tags"><a href="https://github.com/muhammetcnli/CampusPulse" target="_blank" rel="noreferrer">github.com/muhammetcnli/CampusPulse</a></p>
+                </article>
+            </section>
+
+            <section class="experience-section">
+                <div class="section-heading">
+                    <h2 data-i18n="skillsHeading">Technical Skills</h2>
+                    <span class="section-note" data-i18n="skillsNote">Core stack</span>
+                </div>
+
+                <article class="experience-item">
+                    <ul>
+                        <li><strong data-i18n="skillsLangs">Languages:</strong> Java, JavaScript, Python, C#, SQL, PHP.</li>
+                        <li><strong data-i18n="skillsFrameworks">Frameworks & Libraries:</strong> Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Spring AI, Hibernate, React.js, JUnit.</li>
+                        <li><strong data-i18n="skillsDb">Database Technologies:</strong> PostgreSQL, MySQL, MS SQL Server, MongoDB, Redis.</li>
+                        <li><strong data-i18n="skillsArch">Architecture & Security:</strong> RESTful API Development, SOAP, Microservices Architecture, JWT Authentication, RBAC.</li>
+                        <li><strong data-i18n="skillsDevOps">DevOps & Tools:</strong> Git, Docker, GitHub Actions (CI/CD), Swagger, Maven, Postman, Claude.</li>
+                        <li><strong data-i18n="skillsSoft">Soft Skills:</strong> Agile Development, Team Collaboration, Technical Documentation, Problem Solving.</li>
+                        <li><strong data-i18n="skillsSpoken">Spoken Languages:</strong> Turkish (Native), English (B2+).</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="experience-section">
+                <div class="section-heading">
+                    <h2 data-i18n="referencesHeading">References</h2>
+                    <span class="section-note">Contact upon request</span>
+                </div>
+
+                <article class="experience-item">
+                    <ul>
+                        <li>Yusuf İslam DEMİR – Software Developer @ Trendyol - yusufislamdemir41@gmail.com</li>
+                        <li>Aykut BAŞÇI – Senior IT Specialist @ DP World Evyap - aykut_basci@hotmail.com</li>
+                    </ul>
+                </article>
+            </section>
+
+            <footer class="site-footer">
+                <p data-i18n="footerCopy">Printable Resume Website © 2026 Muhammet Canlı</p>
+                <a href="https://github.com/muhammetcnli" target="_blank" rel="noreferrer" data-i18n="footerLink">GitHub</a>
+            </footer>
         </div>
-    </footer>
+    </main>
+
+    <script>
+        const translations = {
+            en: {
+                downloadPdf: 'Download PDF',
+                summaryLead: 'Results-driven Computer Engineering graduate and Software Developer specializing in Java and Spring Boot. Experienced in architecting scalable fintech solutions, AI-driven platforms, and enterprise-level hierarchical approval systems.',
+                summaryBody: 'Proficient in RESTful microservices, SQL, and modern deployment pipelines (Docker, CI/CD). Combines a global perspective gained through an Erasmus+ exchange with proven hands-on software delivery in corporate environments.',
+                contactHeading: 'Contact',
+                phoneLabel: 'Phone:',
+                emailLabel: 'Email:',
+                locationLabel: 'Location:',
+                personalHeading: 'Personal',
+                githubLabel: 'GitHub:',
+                linkedinLabel: 'LinkedIn:',
+                languagesLabel: 'Languages:',
+                summaryFull: 'Results-driven Computer Engineering graduate and Software Developer specializing in Java and Spring Boot. Experienced in architecting scalable fintech solutions, AI-driven platforms, and enterprise-level hierarchical approval systems. Proficient in RESTful microservices, SQL, and modern deployment pipelines (Docker, CI/CD). Combines a global perspective gained through an Erasmus+ exchange with proven hands-on software delivery in corporate environments.',
+                experienceHeading: 'Experience',
+                experienceNote: 'Sep 2022 - Jun 2026',
+                dpTitle: 'Software Developer Intern, DP World Evyap',
+                kbbTitle: 'Software Developer Intern, Kocaeli Büyükşehir Belediyesi',
+                educationHeading: 'Education',
+                educationNote: 'Academic background',
+                duzceTitle: 'Duzce University, Bachelor\'s Degree in Computer Engineering',
+                gdanskTitle: 'Gdansk University of Technology, Bachelor\'s Degree in Data Engineering',
+                referencesHeading: 'References',
+                projectsHeading: 'Personal Projects',
+                projectsNote: 'Selected work',
+                tradeMasterTitle: 'TradeMaster – Multi-Asset Trading Engine',
+                resumiseTitle: 'Resumise – AI-Powered Career Platform',
+                campusTitle: 'CampusPulse – 3D Digital Twin & Energy Analytics',
+                skillsHeading: 'Technical Skills',
+                skillsNote: 'Core stack',
+                skillsLangs: 'Languages:',
+                skillsFrameworks: 'Frameworks & Libraries:',
+                skillsDb: 'Database Technologies:',
+                skillsArch: 'Architecture & Security:',
+                skillsDevOps: 'DevOps & Tools:',
+                skillsSoft: 'Soft Skills:',
+                skillsSpoken: 'Spoken Languages:',
+                footerCopy: 'Printable Resume Website © 2026 Muhammet Canlı',
+                footerLink: 'GitHub'
+            },
+            tr: {
+                downloadPdf: 'PDF İndir',
+                summaryLead: 'Java ve Spring Boot konusunda uzmanlaşmış, sonuç odaklı bir Bilgisayar Mühendisliği mezunu ve Yazılım Geliştiricisiyim. Ölçeklenebilir fintech çözümleri, yapay zeka odaklı platformlar ve kurumsal hiyerarşik onay sistemleri tasarlama deneyimine sahibim.',
+                summaryBody: 'RESTful mikroservisler, SQL ve Docker ile CI/CD içeren modern dağıtım süreçlerinde yetkinim. Erasmus+ değişim programından gelen küresel bakış açısını, kanıtlanmış uygulamalı yazılım teslim deneyimiyle birleştiriyorum.',
+                contactHeading: 'İletişim',
+                phoneLabel: 'Telefon:',
+                emailLabel: 'E-posta:',
+                locationLabel: 'Konum:',
+                personalHeading: 'Kişisel',
+                githubLabel: 'GitHub:',
+                linkedinLabel: 'LinkedIn:',
+                languagesLabel: 'Diller:',
+                summaryFull: 'Java ve Spring Boot konusunda uzmanlaşmış, Bilgisayar Mühendisliği mezunu bir Yazılım Geliştiricisiyim. Ölçeklenebilir fintech çözümleri, yapay zeka odaklı platformlar ve kurumsal hiyerarşik onay sistemleri tasarlama deneyimine sahibim. RESTful mikroservisler, SQL ve Docker ile CI/CD içeren modern dağıtım süreçlerinde yetkinim. Erasmus+ değişim programından gelen küresel bakış açısını, kanıtlanmış uygulamalı yazılım teslim deneyimiyle birleştiriyorum.',
+                experienceHeading: 'Deneyim',
+                experienceNote: 'Sep 2022 - Haz 2026',
+                dpTitle: 'Yazılım Geliştirici Stajyeri, DP World Evyap',
+                kbbTitle: 'Yazılım Geliştirici Stajyeri, Kocaeli Büyükşehir Belediyesi',
+                educationHeading: 'Eğitim',
+                educationNote: 'Akademik geçmiş',
+                duzceTitle: 'Düzce Üniversitesi, Bilgisayar Mühendisliği Lisans Programı',
+                gdanskTitle: 'Gdańsk Teknik Üniversitesi, Veri Mühendisliği Lisans Programı',
+                referencesHeading: 'Referanslar',
+                projectsHeading: 'Kişisel Projeler',
+                projectsNote: 'Seçili çalışmalar',
+                tradeMasterTitle: 'TradeMaster – Çok Varlıklı İşlem Motoru',
+                resumiseTitle: 'Resumise – Yapay Zeka Destekli Kariyer Platformu',
+                campusTitle: 'CampusPulse – 3D Dijital İkiz ve Enerji Analitiği',
+                skillsHeading: 'Teknik Yetenekler',
+                skillsNote: 'Ana teknoloji seti',
+                skillsLangs: 'Diller:',
+                skillsFrameworks: 'Frameworkler ve Kütüphaneler:',
+                skillsDb: 'Veritabanı Teknolojileri:',
+                skillsArch: 'Mimari ve Güvenlik:',
+                skillsDevOps: 'DevOps ve Araçlar:',
+                skillsSoft: 'Yumuşak Beceriler:',
+                skillsSpoken: 'Konuşulan Diller:',
+                footerCopy: 'Yazdırılabilir Özgeçmiş Sitesi © 2026 Muhammet Canlı',
+                footerLink: 'GitHub'
+            }
+        };
+
+        const languageButtons = document.querySelectorAll('[data-lang]');
+        const translatableNodes = document.querySelectorAll('[data-i18n]');
+
+        function setLanguage(language) {
+            const content = translations[language] || translations.en;
+            document.documentElement.lang = language;
+
+            languageButtons.forEach((button) => {
+                button.classList.toggle('is-active', button.dataset.lang === language);
+            });
+
+            translatableNodes.forEach((node) => {
+                const key = node.dataset.i18n;
+                if (content[key]) {
+                    node.textContent = content[key];
+                }
+            });
+        }
+
+        languageButtons.forEach((button) => {
+            button.addEventListener('click', () => setLanguage(button.dataset.lang));
+        });
+
+        setLanguage('en');
+    </script>
 </body>
 </html>
